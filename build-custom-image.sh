@@ -7,7 +7,7 @@ export APPS_JSON='[
   },
   {
    "url": "https://github.com/ccggyy/hrms.git",
-   "branch": "version-14"
+   "branch": "version-14-offline"
   },
   {
    "url": "https://github.com/ccggyy/erpnext_chinese.git",
