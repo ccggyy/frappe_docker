@@ -7,7 +7,7 @@ export APPS_JSON='[
   },
   {
    "url": "https://github.com/ccggyy/hrms.git",
-   "branch": "version-14-offline"
+   "branch": "version-14"
   },
   {
    "url": "https://github.com/ccggyy/erpnext_chinese.git",
@@ -24,5 +24,5 @@ docker build \
   --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
   --build-arg=FRAPPE_BRANCH=version-14 \
   --build-arg=FRAPPE_PATH=https://github.com/ccggyy/frappe \
-  --tag=ccggyy/erpnext:0.0.3 \
+  --tag=ccggyy/erpnext:0.0.4 \
   --file=images/custom/Containerfile .
