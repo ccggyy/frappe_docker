@@ -24,5 +24,5 @@ docker build \
   --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
   --build-arg=FRAPPE_BRANCH=version-14 \
   --build-arg=FRAPPE_PATH=https://github.com/ccggyy/frappe \
-  --tag=ccggyy/erpnext:0.0.1 \
+  --tag=ccggyy/erpnext:0.0.3 \
   --file=images/custom/Containerfile .
