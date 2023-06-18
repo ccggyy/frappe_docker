@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
@@ -11,7 +11,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   configurator:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: none
@@ -39,7 +39,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   create-site:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: none
@@ -95,7 +95,7 @@ services:
       - db-data:/var/lib/mysql
 
   frontend:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
@@ -117,7 +117,7 @@ services:
       - "8080:8080"
 
   queue-default:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
@@ -131,7 +131,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   queue-long:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
@@ -145,7 +145,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   queue-short:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
@@ -183,7 +183,7 @@ services:
       - redis-socketio-data:/data
 
   scheduler:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
@@ -195,7 +195,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   websocket:
-    image: ccggyy/erpnext:0.0.1
+    image: ccggyy/erpnext:${ERPNEXT_VERSION}
     deploy:
       restart_policy:
         condition: on-failure
