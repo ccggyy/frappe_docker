@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APPS_JSON='[
+export APPS_JSON='[
   {
     "url": "https://github.com/ccggyy/erpnext.git",
     "branch": "version-14"
@@ -15,7 +15,7 @@ APPS_JSON='[
   }
 ]'
 
-APPS_JSON_BASE64=$(echo ${APPS_JSON} | base64 -w 0)
+export APPS_JSON_BASE64=$(echo ${APPS_JSON} | base64 -w 0)
 
 docker build \
   --build-arg=PYTHON_VERSION=3.10.12 \
