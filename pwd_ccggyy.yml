@@ -208,32 +208,8 @@ services:
 
 volumes:
   db-data:
-    driver_opts:
-      type: none
-      o: bind
-      device: ${VOLUME:?No volume set}/db-data
   redis-queue-data:
-    driver_opts:
-      type: none
-      o: bind
-      device: ${VOLUME:?No volume set}/redis-queue-data
   redis-cache-data:
-    driver_opts:
-      type: none
-      o: bind
-      device: ${VOLUME:?No volume set}/redis-cache-data
   redis-socketio-data:
-    driver_opts:
-      type: none
-      o: bind
-      device: ${VOLUME:?No volume set}/redis-socketio-data
   sites:
-    driver_opts:
-      type: none
-      o: bind
-      device: ${VOLUME:?No volume set}/sites
   logs:
-    driver_opts:
-      type: none
-      o: bind
-      device: ${VOLUME:?No volume set}/logs
