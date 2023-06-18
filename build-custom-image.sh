@@ -10,7 +10,7 @@ export APPS_JSON='[
    "branch": "version-14"
   },
   {
-   "url": "https://gitee.com/yuzelin/erpnext_chinese.git",
+   "url": "https://github.com/ccggyy/erpnext_chinese.git",
    "branch": "master"
   }
 ]'
